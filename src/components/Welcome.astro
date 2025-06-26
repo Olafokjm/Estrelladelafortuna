@@ -1,0 +1,222 @@
+---
+
+---
+
+<div id="container">
+	<div id="header">
+		<h1>
+			Sólo para personas que quieran transformar su vida y ganar más de
+			3.000 dólares con trading.
+		</h1>
+	</div>
+	<div id="body">
+		<h3>
+			Descubre un sistema de transformación que te llevará a vivir del
+			trading en tan solo 90 días, de lo contrario te devolvemos tu
+			inversión.
+		</h3>
+
+		<div id="video">
+			<!-- Video (Paso 1) -->
+			<p class="pasos"><b>PASO 1: </b>Mira el video hasta el final</p>
+			<video
+				id="tradingVideo"
+				controlslist="nodownload"
+				disablepictureinpicture
+				oncontextmenu="return false"
+				playsinline
+				autoplay
+				muted
+				controls="controls"
+				preload="metadata"
+				data-yt-controls="1"
+			>
+				<source src="/trading.mp4" type="video/mp4" />
+				Tu navegador no soporta el enlace al video.
+			</video>
+			<div id="mute-overlay">
+				<img src="/volume-mute.png" alt="Mute icon" />
+				<p>Haz clic para reproducir sonido</p>
+			</div>
+		</div>
+
+		<div id="link">
+			<!-- Link (Paso 2) -->
+			<p class="pasos"><b>PASO 2: </b>Dale clic al enlace.</p>
+			<p>Ingresa a mi comunidad de Telegram Gratuita.</p><br/>
+			<a 
+				href="https://t.me/+Rvp0xtsHRYtkODlh" 
+				target="_blank" 
+				title="Ingresa al canal"
+				id="telegram_link"
+			>
+				<button>
+					<img
+						src="/telegram.png"
+						alt="Telegram"
+						width="30"
+						height="30"
+						style="vertical-align: middle; margin-right: 8px;"
+					/>
+					<b>Unirme a Telegram</b>
+				</button>
+			</a>
+		</div>
+
+		<div id="footer">
+			<h3>JEISSON MALDONADO</h3>
+			<p>Todos los derechos reservados</p>
+			<p>&copy 2025 Jeisson Maldonado</p>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	document
+		.getElementById("mute-overlay")
+		.addEventListener("click", function () {
+			document.getElementById("tradingVideo").muted = false;
+			this.style.display = "none";
+		});
+
+	
+	document
+        .getElementById("telegram_link")
+        .addEventListener("click", function () {
+            gtag('event', 'click', {
+                'event_category': 'Enlace',
+                'event_label': 'Telegram Link'
+            });
+        });
+</script>
+
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	#container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		height: 100vh;
+		max-width: 800px;
+	}
+
+	#header {
+		background-color: #ff0000;
+		height: auto;
+		padding: 15px 10px;
+		line-height: 1;
+	}
+
+	#header h1 {
+		font-size: 1.625rem;
+	}
+
+	#body {
+		padding: 0 10px;
+		max-width: 500px;
+	}
+
+	#video {
+		margin-top: 20px;
+	}
+
+	#video video {
+		width: 100%;
+		height: auto;
+		border: none;
+		border-radius: 10px;
+	}
+
+	#tradingVideo::-webkit-media-controls-time-seek-forward-button,
+	#tradingVideo::-webkit-media-controls-timeline {
+		display: none;
+	}
+
+	#mute-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #0eb30e8a;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#mute-overlay img {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+
+	#mute-overlay p {
+		font-size: 18px;
+		color: #fff;
+	}
+
+	#link {
+		margin: 0 0 20px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#link button {
+		background-color: #0088cc;
+		color: #fff;
+		border: none;
+		border-radius: 10px;
+		padding: 18px 28px;
+		font-size: 1.5rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		transition:
+			box-shadow 0.3s ease,
+			transform 0.3s ease;
+		box-shadow: 0 0 40px #0eb30e;
+		animation: pulse 2s infinite;
+	}
+
+	#link button:hover {
+		box-shadow: 0 0 50px #0eb30e;
+		transform: scale(1.05);
+	}
+
+	#link a:focus {
+  		outline: none; 
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	
+	.pasos {
+		font-size: 1.2rem;
+		margin: 15px 0;
+	}
+
+	.pasos b,
+	#footer h3 {
+		color: #0eb30e;
+	}
+
+	#footer {
+		margin: 30px;
+	}
+</style>
