@@ -5,20 +5,18 @@
 <div id="container">
 	<div id="header">
 		<h1>
-			Sólo para personas que quieran transformar su vida y ganar más de
-			3.000 dólares con trading.
+			👉 ¿Te gustan los sorteos, las rifas y la emoción diaria? 🍀
+			🎲📈 Juega, participa y gana con nuestras Dinámicas Diarias 💰💵
 		</h1>
 	</div>
 	<div id="body">
 		<h3>
-			Descubre un sistema de transformación que te llevará a vivir del
-			trading en tan solo 90 días, de lo contrario te devolvemos tu
-			inversión.
+			Te damos la bienvenida a Estrella de la Fortuna
 		</h3>
 
+		<p>Participa en nuestros sorteos diarios de 2 cifras y gana premios instantáneos de hasta 1 millón. ¡Es fácil y divertido!</p>
+
 		<div id="video">
-			<!-- Video (Paso 1) -->
-			<p class="pasos"><b>PASO 1: </b>Mira el video hasta el final</p>
 			<video
 				id="tradingVideo"
 				controlslist="nodownload"
@@ -31,7 +29,7 @@
 				preload="metadata"
 				data-yt-controls="1"
 			>
-				<source src="/trading.mp4" type="video/mp4" />
+				<source src="/estrella_video.mp4" type="video/mp4" />
 				Tu navegador no soporta el enlace al video.
 			</video>
 			<div id="mute-overlay">
@@ -40,33 +38,39 @@
 			</div>
 		</div>
 
+		<h3>📲 Únete a nuestra comunidad de WhatsApp y recibe todo directamente en tu celular:</h3>
+		<ul>
+			<li>✅ Sorteos diarios de 2 cifras</li>
+			<li>✅ Premios de hasta 1 millón de pesos</li>
+			<li>✅ Resultados en tiempo real</li>
+			<li>✅ Atención directa y personalizada</li>
+			<li>✅ Regalos gratis entre 5 y 10 números todos los días</li>
+		</ul>
+
 		<div id="link">
-			<!-- Link (Paso 2) -->
-			<p class="pasos"><b>PASO 2: </b>Dale clic al enlace.</p>
-			<p>Ingresa a mi comunidad de Telegram Gratuita.</p><br/>
 			<a 
-				href="https://t.me/+Rvp0xtsHRYtkODlh" 
+				href="" 
 				target="_blank" 
-				title="Ingresa al canal"
-				id="telegram_link"
+				title="Ingresa al grupo"
+				id="whatsapp_link"
 			>
 				<button>
 					<img
-						src="/telegram.png"
-						alt="Telegram"
-						width="30"
-						height="30"
+						src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+						alt="Whatsapp"
+						width="40"
+						height="40"
 						style="vertical-align: middle; margin-right: 8px;"
 					/>
-					<b>Unirme a Telegram</b>
+					<b>Unirme al grupo</b>
 				</button>
 			</a>
 		</div>
 
 		<div id="footer">
-			<h3>JEISSON MALDONADO</h3>
+			<h3>ESTRELLA DE LA FORTUNA</h3>
 			<p>Todos los derechos reservados</p>
-			<p>&copy 2025 Jeisson Maldonado</p>
+			<p>2025</p>
 		</div>
 	</div>
 </div>
@@ -82,7 +86,7 @@
 
 	
 	document
-        .getElementById("telegram_link")
+        .getElementById("whatsapp_link")
         .addEventListener("click", function () {
             gtag('event', 'click', {
                 'event_category': 'Enlace',
@@ -107,7 +111,7 @@
 	}
 
 	#header {
-		background-color: #ff0000;
+		background-color: #1613e9;
 		height: auto;
 		padding: 15px 10px;
 		line-height: 1;
@@ -124,11 +128,12 @@
 
 	#video {
 		margin-top: 20px;
+		position: relative;
 	}
 
 	#video video {
-		width: 100%;
-		height: auto;
+		width: auto;
+		max-height: 400px;
 		border: none;
 		border-radius: 10px;
 	}
@@ -169,7 +174,7 @@
 	}
 
 	#link button {
-		background-color: #0088cc;
+		background-color: #1BD741;
 		color: #fff;
 		border: none;
 		border-radius: 10px;
@@ -181,7 +186,7 @@
 		transition:
 			box-shadow 0.3s ease,
 			transform 0.3s ease;
-		box-shadow: 0 0 40px #0eb30e;
+		box-shadow: 0 0 40px #f72a2a;
 		animation: pulse 2s infinite;
 	}
 
